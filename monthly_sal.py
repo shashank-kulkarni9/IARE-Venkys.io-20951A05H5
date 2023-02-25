@@ -1,0 +1,5 @@
+sal_per_week=float(input('Enter week gross salary: '))
+deductions=list(map(float,input('Enter decuctions percentages by spacing: ').split())850)
+no_of_weeks=int(input('Enter no of weeks: '))
+x=sal_per_week*(1-(sum(deductions)/100))
+print(x*no_of_weeks)
